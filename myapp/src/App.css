@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  background: rgb(255,248,170);
+  background: linear-gradient(0deg, rgba(255,248,170,1) 0%, rgba(255,255,255,1) 100%);
+  background-size: cover;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navImg{
+  height: 20vh;
+}
+
+.content{
+  display: flex;
+  /* justify-content: center; */
+}
+
+ul {
+  padding-left: 35px;
+  padding-top: 5px;
+}
+.left{
+  height: 100vh;
+  width: 40%;
+  /* background-color: red; */
+}
+
+.leftImg{
+  width: 30vw;
+  height: 100%;
+}
+
+.right{
+  padding: 5px 10px;
+  height: 100vh;
+  width: 60%;
+  /* background-color: blue; */
+}
+
+.rightImg{
+  height: 70vh;
+  width: 100%;
+  object-fit: contain;
+  margin: 0;
+}
+
+.insatlledLine{
+  padding: 20px;
+}
+
+.lastImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lastImg{
+  width: 80%;
+}
+
+.line hr{
+  border-top: 1.5px solid red;
+}
+
+.lastContent{
+  padding: 10px;
+  text-align: center;
+}
+
+.lastContent p span {
+  color: red;
+  font-weight: 900;
+}
+
+.lastContent h4{
+  padding-top: 10px;
+}
+
+.lastContent p{
+  padding: 20px;
+}
+
+footer{
+  background-color: red;
+  padding: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+h5{
+  text-align: center;
+  padding: 10px;
+}
+
+footer i {
+  cursor: pointer;
+  color: white;
+}
+
+footer i span{
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    max-width: 100%;
+    width: 100%;
+  }
+}

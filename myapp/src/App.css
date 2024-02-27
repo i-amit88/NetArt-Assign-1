@@ -1,79 +1,83 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
   width: 100%;
-  background: rgb(255,248,170);
-  background: linear-gradient(0deg, rgba(255,248,170,1) 0%, rgba(255,255,255,1) 100%);
+  background: rgb(255, 248, 170);
+  background: linear-gradient(0deg, rgba(255, 248, 170, 1) 0%, rgba(255, 255, 255, 1) 100%);
   background-size: cover;
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.navImg{
+.navImg {
   height: 20vh;
 }
 
-.content{
+.content {
   display: flex;
-  /* justify-content: center; */
+  flex-wrap: wrap;
+  height: 100vh;
 }
+
 
 ul {
   padding-left: 35px;
   padding-top: 5px;
 }
-.left{
+
+.left {
   height: 100vh;
   width: 40%;
   /* background-color: red; */
 }
 
-.leftImg{
+.leftImg {
   width: 30vw;
   height: 100%;
 }
 
-.right{
+.right {
   padding: 5px 10px;
   height: 100vh;
   width: 60%;
   /* background-color: blue; */
 }
 
-.rightImg{
+.rightImg {
   height: 70vh;
   width: 100%;
   object-fit: contain;
   margin: 0;
 }
 
-.insatlledLine{
+.insatlledLine {
   padding: 20px;
 }
 
-.lastImage{
+.lastImage {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.lastImg{
+.lastImg {
   width: 80%;
 }
 
-.line hr{
+.line hr {
   border-top: 1.5px solid red;
 }
 
-.lastContent{
+.lastContent {
   padding: 10px;
   text-align: center;
 }
@@ -83,15 +87,15 @@ ul {
   font-weight: 900;
 }
 
-.lastContent h4{
+.lastContent h4 {
   padding-top: 10px;
 }
 
-.lastContent p{
+.lastContent p {
   padding: 20px;
 }
 
-footer{
+footer {
   background-color: red;
   padding: 40px;
   padding-top: 20px;
@@ -99,7 +103,7 @@ footer{
   justify-content: space-around;
 }
 
-h5{
+h5 {
   text-align: center;
   padding: 10px;
 }
@@ -109,18 +113,164 @@ footer i {
   color: white;
 }
 
-footer i span{
+footer i span {
   padding: 0 5px;
 }
+.lastContent p{
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  line-height: 17px;
+}
 
-@media screen and (max-width: 768px) {
-  .content {
+@media screen and (max-width: 1024px) {
+  /* .content {
     flex-direction: column;
+  } */
+
+  .content h4,
+  p {
+    font-size: 0.7rem;
+  }
+  .content{
+    height: 460px;
   }
 
-  .left,
-  .right {
-    max-width: 100%;
-    width: 100%;
+  img {
+    height: 30px;
+  }
+  .leftImg {
+    width: 40vw;
+    height: 80%;
+    object-fit: contain;
+  }
+  .right{
+    padding-bottom: 7px;
+  }
+  .right h4,li{
+    font-size: 0.7rem;
+  }
+  .rightImg{
+    height: 50vh;
+  }
+  .insatlledLine{
+    padding-top: 0;
+  }
+  .lastImg{
+    height: 150px;
+    width: 80%;
+  }
+  .insatlledLine span{
+    font-size: 0.8rem;
+  }
+  .lastContent p{
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    line-height: 15px;
+  }
+  .pTag p{
+    font-size: 0.9rem;
+  }
+}
+@media (max-width:768px) {
+  .content h4,
+  p {
+    font-size: 0.5rem;
+  }
+  .content{
+    height: 320px;
+  }
+  .navImg{
+    height: 70px;
+  }
+  
+  .leftImg {
+    width: 40vw;
+    height: 50%;
+    object-fit: contain;
+  }
+  .right{
+    padding-bottom: 7px;
+  }
+  .right h4,li{
+    font-size: 0.6rem;
+  }
+  .rightImg{
+    height: 30vh;
+  }
+  .insatlledLine{
+    padding-top: 0;
+  }
+  .lastImg{
+    height: 110px;
+    width: 80%;
+  }
+  .insatlledLine span{
+    font-size: 0.75rem;
+  }
+  .lastContent p{
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    line-height: 15px;
+  }
+
+  footer span{
+      font-size: 0.7rem;
+  }
+  .pTag p{
+    font-size: 0.7rem;
+  }
+  
+}
+
+@media (max-width:480px) {
+  .content h4,
+  p {
+    font-size: 0.5rem;
+  }
+  .content{
+    height: 300px;
+  }
+  .navImg{
+    height: 60px;
+  }
+  
+  .leftImg {
+    width: 40vw;
+    height: 60%;
+    object-fit: contain;
+  }
+  .right{
+    padding-bottom: 7px;
+  }
+  .right h4,li{
+    font-size: 0.5rem;
+  }
+  .rightImg{
+    height: 20vh;
+  }
+  .insatlledLine{
+    padding-top: 0;
+  }
+  .lastImg{
+    height: 100px;
+    width: 80%;
+  }
+  .insatlledLine span{
+    font-size: 0.56rem;
+  }
+  .lastContent p{
+    font-size: 0.55rem;
+    letter-spacing: 1px;
+    line-height: 15px;
+  }
+  .lastContent h4{
+    font-size: 0.7rem;
+  }
+
+  footer span,i{
+      font-size: 0.5rem;
+  }
+  .pTag p{
+    font-size: 0.6rem;
   }
 }

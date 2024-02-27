@@ -222,10 +222,62 @@ footer i span {
   
 }
 
+@media (max-width:320px) {
+  .content h4,
+  p {
+    font-size: 0.45rem;
+  }
+  .content{
+    height: 300px;
+  }
+  .navImg{
+    height: 60px;
+  }
+  
+  .leftImg {
+    width: 40vw;
+    height: 60%;
+    object-fit: contain;
+  }
+  .right{
+    padding-bottom: 7px;
+  }
+  .right h4,li{
+    font-size: 0.5rem;
+  }
+  .rightImg{
+    height: 20vh;
+  }
+  .insatlledLine{
+    padding-top: 0;
+  }
+  .lastImg{
+    height: 100px;
+    width: 80%;
+  }
+  .insatlledLine span{
+    font-size: 0.56rem;
+  }
+  .lastContent p{
+    font-size: 0.55rem;
+    letter-spacing: 1px;
+    line-height: 15px;
+  }
+  .lastContent h4{
+    font-size: 0.7rem;
+  }
+
+  footer span,i{
+      font-size: 0.5rem;
+  }
+  .pTag p{
+    font-size: 0.6rem;
+  }
+}
 @media (max-width:480px) {
   .content h4,
   p {
-    font-size: 0.5rem;
+    font-size: 0.65rem;
   }
   .content{
     height: 300px;
